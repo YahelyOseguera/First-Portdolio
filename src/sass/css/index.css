@@ -1,8 +1,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
 }
 
 body {
@@ -15,6 +15,7 @@ body {
   left: 0;
   width: 100%;
   padding: 20px 10%;
+  margin-right: 5px;
   background: #ADA5BB;
   display: flex;
   justify-content: space-between;
@@ -49,29 +50,30 @@ body {
 
 .home {
   position: relative;
-  width: 100%;
+  width: 85%;
   height: 100vh;
   display: flex;
   align-items: center;
-  padding: 10px 5% 10px;
+  padding: 20px;
 }
 .home img {
   position: absolute;
   top: 10%;
-  right: 30px;
-  width: 500px;
-  border-radius: 50%;
+  right: 20px;
+  width: 450px;
+  box-sizing: border-box;
+  border-radius: 15px 15px 15px 15px;
   background-position: center center;
-  padding-right: 40px;
 }
 
 .home-content {
+  margin-top: 20%;
   max-width: 700px;
   color: black;
 }
 
 h1 {
-  font-size: 56px;
+  font-size: 50px;
   font-weight: 600;
   margin: 10px 40px;
 }
@@ -84,23 +86,188 @@ p {
 .home-content .bottom-box {
   display: flex;
   justify-content: space-between;
-  width: 345px;
-  height: 50px;
+  width: 800px;
+  height: 90px;
 }
 
 .bottom-box a {
   margin: 10px 40px;
-  display: inline-block;
   width: 150px;
-  height: 100%;
-  align-content: center;
-  justify-content: center;
+  height: 40px;
   background: #ADA5BB;
-  border-radius: 40px;
+  border-radius: 20px;
   box-shadow: 0 0 10px #ADA5BB;
-  font-size: 16px;
+  font-size: 14px;
   color: black;
   text-decoration: none;
   font-weight: 600;
   letter-spacing: 1px;
+  text-align: center;
+}
+
+.afterw {
+  margin-top: 40px;
+}
+
+.titlehead {
+  color: black;
+  font-size: 300%;
+  width: 100%;
+  vertical-align: middle;
+  text-shadow: 4px 4px 2px gray;
+  text-align: center;
+}
+
+.edu-timeline {
+  position: relative;
+  width: 100%;
+  margin: 50px auto;
+}
+
+.edu-container {
+  padding: 10px 50px;
+  position: relative;
+  width: 50%;
+  animation: movedown 3s linear forwards;
+  opacity: 0;
+}
+
+@keyframes movedown {
+  0% {
+    opacity: 1;
+    transform: translateY(-40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.edu-container:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.edu-container:nth-child(2) {
+  animation-delay: 1s;
+}
+
+.edu-container:nth-child(3) {
+  animation-delay: 2s;
+}
+
+.tex-box {
+  padding: 20px 20px;
+  background-color: #ADA5BB;
+  position: relative;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+.left-container {
+  left: 0;
+  padding-left: 180px;
+}
+
+.rigth-container {
+  left: 50%;
+  padding-right: 180px;
+}
+
+.edu-container img {
+  position: absolute;
+  width: 40px;
+  border-radius: 6px;
+  right: -20px;
+  top: 32px;
+  z-index: 10;
+}
+
+.rigth-container img {
+  left: -20px;
+}
+
+.edu-timeline::after {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 100%;
+  background: black;
+  top: 0;
+  left: 50%;
+  margin-left: -3px;
+  z-index: -1;
+  animation: moveline 3s linear forwards;
+}
+@keyframes moveline {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 100%;
+  }
+}
+
+.tex-box h2 {
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.tex-box small {
+  display: inline-block;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+.left-container-arrow {
+  height: 0;
+  width: 0;
+  position: absolute;
+  top: 28px;
+  z-index: 1;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 15px solid #ADA5BB;
+  right: -15px;
+}
+
+.rigth-container-arrow {
+  height: 0;
+  width: 0;
+  position: absolute;
+  top: 28px;
+  z-index: 1;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-right: 15px solid #ADA5BB;
+  left: -15px;
+}
+
+@media only screen and (max-width: 600px) {
+  .edu-timeline {
+    margin: 50px 60px;
+  }
+  .edu-timeline::after {
+    left: 31px;
+  }
+  .edu-container {
+    width: 100%;
+    padding-left: 80px;
+    padding-right: 25px;
+  }
+  .text-box {
+    font-size: 13px;
+  }
+  .tex-box small {
+    margin-bottom: 10px;
+  }
+  .rigth-container {
+    left: 0;
+  }
+  .left-container img, .rigth-container img {
+    left: 10px;
+  }
+  .left-container-arrow, .rigth-container-arrow {
+    border-right: 15px solid #ADA5BB;
+    border-left: 0;
+    left: -15px;
+  }
 }/*# sourceMappingURL=index.css.map */
