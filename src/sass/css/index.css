@@ -105,8 +105,9 @@ p {
   text-align: center;
 }
 
+/* experiance */
 .afterw {
-  margin-top: 40px;
+  margin-top: 50px;
 }
 
 .titlehead {
@@ -164,12 +165,12 @@ p {
 
 .left-container {
   left: 0;
-  padding-left: 180px;
+  padding-left: 200px;
 }
 
 .rigth-container {
   left: 50%;
-  padding-right: 180px;
+  padding-right: 200px;
 }
 
 .edu-container img {
@@ -208,16 +209,21 @@ p {
 
 .tex-box h2 {
   font-weight: 600;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
 }
 
 .tex-box small {
   display: inline-block;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   font-size: 15px;
 }
 
-.left-container-arrow {
+.tex-box h4 {
+  font-size: 15px;
+  font-weight: 200;
+}
+
+.exp-left-container-arrow {
   height: 0;
   width: 0;
   position: absolute;
@@ -229,7 +235,7 @@ p {
   right: -15px;
 }
 
-.rigth-container-arrow {
+.exp-rigth-container-arrow {
   height: 0;
   width: 0;
   position: absolute;
@@ -266,6 +272,191 @@ p {
     left: 10px;
   }
   .left-container-arrow, .rigth-container-arrow {
+    border-right: 15px solid #ADA5BB;
+    border-left: 0;
+    left: -15px;
+  }
+}
+/* experiance */
+.exp-timeline {
+  position: relative;
+  width: 100%;
+  margin: 50px auto;
+}
+
+.exp-container {
+  padding: 10px 50px;
+  position: relative;
+  width: 50%;
+  animation: movedown 2s linear forwards;
+  opacity: 0;
+}
+
+@keyframes movedown {
+  0% {
+    opacity: 1;
+    transform: translateY(-40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.exp-container:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.exp-container:nth-child(2) {
+  animation-delay: 1s;
+}
+
+.experiance-text-box {
+  padding: 20px 20px;
+  background: #ADA5BB;
+  position: relative;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+.exp-left-container {
+  left: 0;
+  padding-left: 200px;
+}
+
+.exp-rigth-container {
+  left: 50%;
+  padding-right: 200px;
+}
+
+.exp-container img {
+  position: absolute;
+  width: 40px;
+  border-radius: 6px;
+  right: -20px;
+  top: 32px;
+  z-index: 10;
+}
+
+.exp-rigth-container img {
+  left: -20px;
+}
+
+.exp-timeline::after {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 100%;
+  background: black;
+  top: 0;
+  left: 50%;
+  margin-left: -3px;
+  z-index: -1;
+  animation: moveline 2s linear forwards;
+}
+@keyframes moveline {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 100%;
+  }
+}
+
+.experiance-text-box h2 {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.experiance-text-box small {
+  display: inline-block;
+  margin-bottom: 5px;
+  font-size: 15px;
+}
+
+.experiance-text-box h4 {
+  font-size: 15px;
+  font-weight: 200;
+}
+
+.left-container-arrow {
+  height: 0;
+  width: 0;
+  position: absolute;
+  top: 28px;
+  z-index: 1;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 15px solid #ADA5BB;
+  right: -15px;
+}
+
+.rigth-container-arrow {
+  height: 0;
+  width: 0;
+  position: absolute;
+  top: 28px;
+  z-index: 1;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-right: 15px solid #ADA5BB;
+  left: -15px;
+}
+
+@media only screen and (max-width: 600px) {
+  .exp-timeline {
+    margin: 50px 60px;
+  }
+  .exp-timeline::after {
+    left: 31px;
+  }
+  .exp-container {
+    width: 100%;
+    padding-left: 80px;
+    padding-right: 25px;
+  }
+  .experiance-text-box {
+    font-size: 13px;
+  }
+  .experiance-text-box small {
+    margin-bottom: 10px;
+  }
+  .exp-rigth-container {
+    left: 0;
+  }
+  .exp-left-container img, .exp-rigth-container img {
+    left: 10px;
+  }
+  .exp-left-container-arrow, .exp-rigth-container-arrow {
+    border-right: 15px solid #ADA5BB;
+    border-left: 0;
+    left: -15px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .exp-timeline {
+    margin: 50px 60px;
+  }
+  .exp-timeline::after {
+    left: 31px;
+  }
+  .exp-container {
+    width: 100%;
+    padding-left: 80px;
+    padding-right: 25px;
+  }
+  .experiance-text-box {
+    font-size: 13px;
+  }
+  .experiance-text-box small {
+    margin-bottom: 10px;
+  }
+  .exp-rigth-container {
+    left: 0;
+  }
+  .exp-left-container img, .exp-rigth-container img {
+    left: 10px;
+  }
+  .exp-left-container-arrow, .exp-rigth-container-arrow {
     border-right: 15px solid #ADA5BB;
     border-left: 0;
     left: -15px;
