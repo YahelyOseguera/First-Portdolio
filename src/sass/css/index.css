@@ -697,4 +697,80 @@ p {
   font-size: 55px;
   color: #def2f1;
   margin-bottom: 15px;
+}
+
+/* CONTACT FOOTER */
+#footer {
+  position: absolute;
+  width: 100%;
+  background: #17252a;
+}
+
+.footerCotontainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.footerCotontainer h2 {
+  font-size: 30px;
+  font-weight: 500;
+  margin-top: 20px;
+  color: #def2f1;
+}
+
+.contactMe {
+  font-weight: 400;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+p {
+  color: #def2f1;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+a {
+  color: #def2f1;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.socialIcons {
+  display: flex;
+  align-items: center;
+}
+
+.socialIcons a i {
+  text-decoration: none;
+  padding: 10px;
+  background-color: #1a857f;
+  margin: 10px;
+  border-radius: 50%;
+}
+.socialIcons a i:hover {
+  background: #def2f1;
+  transition: 0.5s;
+}
+
+.socialIcons a:hover i {
+  font-size: 2em;
+  color: #1a857f;
+  opacity: 0.9;
+}
+
+.footbottom p {
+  color: #def2f1;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.designer {
+  opacity: 0.8;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 15px;
+  margin: 0 5px;
 }/*# sourceMappingURL=index.css.map */
