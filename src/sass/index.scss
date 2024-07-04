@@ -20,8 +20,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 100;
-    
+    z-index: 100;  
 }
 
 .navbar-btns{
@@ -55,8 +54,11 @@ body{
     }
 }
 
-        /* Mobile */
+    /* Mobile */
 @media only screen and (max-width: 600px) {
+    .header{
+        width: 100%;
+    }
     .header,
     .navbar-btns{
       display: flex;
@@ -64,29 +66,26 @@ body{
       justify-content: center;
       align-items: center;
       margin: 0;
-      
     }
-  }
-
-      /* Tablet */
-      @media only screen and (max-width: 900px) and (min-width: 601px) {
+}
   
-        .header,
-        .navbar-btns{
-          
-          width: 100%;
-          display: flex;
-          flex-direction: row;
-          justify-contenxst: space-between;
-          align-items: center;
-          margin-left: 0;
-        }
+    /* Tablet */
+@media only screen and (max-width: 900px) and (min-width: 601px) {
+    .header,
+    .navbar-btns{
+        
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 0;
+    }
+}
 
 
-
-/* HOME */
+    /* HOME */
 .section__container {
-    
     width: 100%;
     margin-left: 60px;
     padding: 5rem;
@@ -155,17 +154,6 @@ body{
 
   .downloadCV{
     color: #3aafa9;
-  }
-  
-  
-  
-  .portfolio {
-    color: var(--primary-color);
-  }
-  
-  .portfolio:hover {
-    background-color: var(--primary-color-dark);
-    color: #ffffff;
   }
   
   .image {
@@ -317,7 +305,6 @@ body{
         100%{
             height: 100%;
         }
-        
     }
 }
 
@@ -364,6 +351,7 @@ body{
     left: -15px;
 }
 
+/* MOBILE */
 @media only screen and (max-width:600px){
     .titlehead{
         text-align: center;
@@ -398,6 +386,46 @@ body{
         left: -15px;
     }
 }
+
+ /* TABLET */
+@media only screen and (min-width:601px) and (max-width: 900px){
+    .titlehead{
+        text-align: center;
+        margin: 20px;
+    }
+    .edu-timeline{
+        margin: 50px auto;
+    }
+    .edu-timeline::after{
+        left: 160px;
+    }
+    .edu-container{
+        width: 90%;
+        padding-left: 220px;
+        padding-right: 80px;
+    }
+    .text-box{
+        font-size: 13px;
+    }
+    .tex-box small{
+        margin-bottom: 10px;
+    } 
+        
+    .left-container{
+        right: 100px;
+    }
+    .rigth-container{
+        left: 0;
+    }
+    .left-container img, .rigth-container img{
+        left: 140px;
+    }
+    .left-container-arrow, .rigth-container-arrow{
+        border-right: 15px solid #def2f1;
+        border-left: 0;
+        left: -15px;
+    }
+    }
 
 /* EXPERIANCE */
 
@@ -598,6 +626,42 @@ body{
         }
     }
 
+    @media only screen and (min-width:601px) and (max-width:900px){
+        .titlehead{
+            text-align: center;
+            margin: 20px;
+        }
+        .exp-timeline{
+            margin: 50px auto;
+        }
+        .exp-timeline::after{
+            left: 160px;
+        }
+        .exp-container{
+            width: 85%;
+            padding-left: 220px;
+            padding-right: 25px;
+        }
+        .experiance-text-box{
+            font-size: 13px;
+        }
+        .experiance-text-box small{
+            margin-bottom: 10px;
+        }
+        .exp-rigth-container{
+            left: 0;
+        }
+        .exp-left-container img, .exp-rigth-container img{
+            left: 140px;
+        }
+    
+        .exp-left-container-arrow, .exp-rigth-container-arrow{
+            border-right: 15px solid #def2f1;
+            border-left: 0;
+            left: -15px;
+        }
+    }
+
 
 /* PROJECTS */
 
@@ -753,7 +817,6 @@ body{
     gap: 30px;
     margin-top: 40px;
 }
-
 .hobby-card{
     width: 230px;
     height: 230px;
@@ -763,7 +826,7 @@ body{
     box-shadow: 0px, 1px, 10px rgba(0, 0, 0, 0.2);
     cursor: default;
     transition: all 400ms ease;  
-    
+
     &:hover{
         box-shadow: 5px, 5px, 20px, rgba(0, 0, 0, 0.2); 
         transform: translateY(-3%);
@@ -776,8 +839,7 @@ body{
     border-radius: 6px;
     margin-bottom: 20px;  
 }
-
-.content{
+.hobby-content{
     width: 100%;
     height: 100%;
     top: 0;
@@ -791,16 +853,17 @@ body{
     opacity: 0;
     transition: 0.6s;
 }
-
-.content:hover{
+.hobby-content:hover{
     opacity: 1;
 }
 
-.content h2{
+.hobby-content h2{
     font-size: 55px;
     color: #def2f1;
     margin-bottom: 15px;
+
 }
+
 
 /* CONTACT FOOTER */
 
@@ -816,6 +879,7 @@ body{
     justify-content: center;
     flex-direction: column;
     text-align: center;
+    margin-bottom: 50px;
 
     h2{
         font-size: 30px;
@@ -869,7 +933,7 @@ a{
 
 .footbottom p{
     color: #def2f1;
-    font-size: 15px;
+    font-size: 12px;
     font-weight: 300;
 }
 
@@ -877,10 +941,10 @@ a{
     opacity: 0.8;
     text-transform: uppercase;
     letter-spacing: 1px;
-    font-size: 15px;
+    font-size: 12px;
     margin: 0 5px;
 }
-      }
+      
 
 
 
