@@ -16,6 +16,7 @@ body {
   left: 0;
   width: 100%;
   padding: 20px;
+  padding: 20px;
   margin-right: 5px;
   background: #17252a;
   display: flex;
@@ -24,7 +25,7 @@ body {
   z-index: 100;
 }
 
-.navbar-btns {
+.navbar-btns .navbar-btns {
   display: flex;
   justify-content: space-evenly;
   margin-right: 1%;
@@ -36,6 +37,10 @@ body {
   text-decoration: none;
   font-weight: 600;
   margin-left: 5%;
+  margin-left: 5%;
+}
+.logo:hover {
+  color: #1a857f;
 }
 .logo:hover {
   color: #1a857f;
@@ -93,7 +98,6 @@ body {
 .content {
   display: flex;
   flex-direction: column;
-  flex-direction: column;
   justify-content: center;
 }
 
@@ -137,9 +141,7 @@ body {
   border: 1px solid #3aafa9;
   border-radius: 10px;
   background: #def2f1;
-  background: #def2f1;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
-  cursor: pointer;
   cursor: pointer;
   text-decoration: none;
 }
@@ -376,41 +378,6 @@ body {
     left: -15px;
   }
 }
-/* MOBILE */
-@media only screen and (max-width: 600px) {
-  .titlehead {
-    text-align: center;
-    margin: 20px;
-  }
-  .edu-timeline {
-    margin: 50px auto;
-  }
-  .edu-timeline::after {
-    left: 31px;
-  }
-  .edu-container {
-    width: 100%;
-    padding-left: 80px;
-    padding-right: 25px;
-  }
-  .text-box {
-    font-size: 13px;
-  }
-  .tex-box small {
-    margin-bottom: 10px;
-  }
-  .rigth-container {
-    left: 0;
-  }
-  .left-container img, .rigth-container img {
-    left: 10px;
-  }
-  .left-container-arrow, .rigth-container-arrow {
-    border-right: 15px solid #def2f1;
-    border-left: 0;
-    left: -15px;
-  }
-}
 /* TABLET */
 @media only screen and (min-width: 601px) and (max-width: 900px) {
   .titlehead {
@@ -449,7 +416,7 @@ body {
     left: -15px;
   }
 }
-/* EXPIRIANCE */
+/* EXPERIANCE */
 .exp-timeline {
   position: relative;
   width: 100%;
@@ -680,6 +647,40 @@ body {
     left: -15px;
   }
 }
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+  .titlehead {
+    text-align: center;
+    margin: 20px;
+  }
+  .exp-timeline {
+    margin: 50px auto;
+  }
+  .exp-timeline::after {
+    left: 160px;
+  }
+  .exp-container {
+    width: 85%;
+    padding-left: 220px;
+    padding-right: 25px;
+  }
+  .experiance-text-box {
+    font-size: 13px;
+  }
+  .experiance-text-box small {
+    margin-bottom: 10px;
+  }
+  .exp-rigth-container {
+    left: 0;
+  }
+  .exp-left-container img, .exp-rigth-container img {
+    left: 140px;
+  }
+  .exp-left-container-arrow, .exp-rigth-container-arrow {
+    border-right: 15px solid #def2f1;
+    border-left: 0;
+    left: -15px;
+  }
+}
 /* PROJECTS */
 .card-projects-container {
   display: flex;
@@ -717,6 +718,7 @@ body {
 .card-content h3 {
   font-weight: 600;
   margin-bottom: 10px;
+  color: #17252a;
 }
 
 .card-content p {
@@ -724,6 +726,7 @@ body {
   margin: 0;
   font-size: medium;
   margin-bottom: 10px;
+  color: #17252a;
 }
 
 .card-content a {
@@ -867,4 +870,81 @@ body {
   font-size: 55px;
   color: #def2f1;
   margin-bottom: 15px;
+}
+
+/* CONTACT FOOTER */
+#footer {
+  position: absolute;
+  width: 100%;
+  background: #17252a;
+}
+
+.footerCotontainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.footerCotontainer h2 {
+  font-size: 30px;
+  font-weight: 500;
+  margin-top: 20px;
+  color: #def2f1;
+}
+
+.contactMe {
+  font-weight: 400;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+p {
+  color: #def2f1;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+a {
+  color: #def2f1;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.socialIcons {
+  display: flex;
+  align-items: center;
+}
+
+.socialIcons a i {
+  text-decoration: none;
+  padding: 10px;
+  background-color: #1a857f;
+  margin: 10px;
+  border-radius: 50%;
+}
+.socialIcons a i:hover {
+  background: #def2f1;
+  transition: 0.5s;
+}
+
+.socialIcons a:hover i {
+  font-size: 2em;
+  color: #1a857f;
+  opacity: 0.9;
+}
+
+.footbottom p {
+  color: #def2f1;
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.designer {
+  opacity: 0.8;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 12px;
+  margin: 0 5px;
 }/*# sourceMappingURL=index.css.map */
