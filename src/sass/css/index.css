@@ -9,11 +9,13 @@ body {
   background: #3aafa9;
 }
 
+/*HEADER */
 .header {
   position: sticky;
   top: 0;
   left: 0;
   width: 100%;
+  padding: 20px;
   padding: 20px;
   margin-right: 5px;
   background: #17252a;
@@ -23,7 +25,7 @@ body {
   z-index: 100;
 }
 
-.navbar-btns {
+.navbar-btns .navbar-btns {
   display: flex;
   justify-content: space-evenly;
   margin-right: 1%;
@@ -35,6 +37,10 @@ body {
   text-decoration: none;
   font-weight: 600;
   margin-left: 5%;
+  margin-left: 5%;
+}
+.logo:hover {
+  color: #1a857f;
 }
 .logo:hover {
   color: #1a857f;
@@ -193,7 +199,7 @@ body {
 }
 /* EDUCATION */
 .afterw {
-  margin-top: 80px;
+  margin-top: 50px;
 }
 
 .titlehead {
@@ -641,6 +647,40 @@ body {
     left: -15px;
   }
 }
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+  .titlehead {
+    text-align: center;
+    margin: 20px;
+  }
+  .exp-timeline {
+    margin: 50px auto;
+  }
+  .exp-timeline::after {
+    left: 160px;
+  }
+  .exp-container {
+    width: 85%;
+    padding-left: 220px;
+    padding-right: 25px;
+  }
+  .experiance-text-box {
+    font-size: 13px;
+  }
+  .experiance-text-box small {
+    margin-bottom: 10px;
+  }
+  .exp-rigth-container {
+    left: 0;
+  }
+  .exp-left-container img, .exp-rigth-container img {
+    left: 140px;
+  }
+  .exp-left-container-arrow, .exp-rigth-container-arrow {
+    border-right: 15px solid #def2f1;
+    border-left: 0;
+    left: -15px;
+  }
+}
 /* PROJECTS */
 .card-projects-container {
   display: flex;
@@ -678,6 +718,7 @@ body {
 .card-content h3 {
   font-weight: 600;
   margin-bottom: 10px;
+  color: #17252a;
 }
 
 .card-content p {
@@ -685,6 +726,7 @@ body {
   margin: 0;
   font-size: medium;
   margin-bottom: 10px;
+  color: #17252a;
 }
 
 .card-content a {
