@@ -16,7 +16,6 @@ body {
   left: 0;
   width: 100%;
   padding: 20px;
-  padding: 20px;
   margin-right: 5px;
   background: #17252a;
   display: flex;
@@ -25,7 +24,6 @@ body {
   z-index: 100;
 }
 
-.navbar-btns {
 .navbar-btns {
   display: flex;
   justify-content: space-evenly;
@@ -41,13 +39,8 @@ body {
 }
 .logo:hover {
   color: #1a857f;
-  margin-left: 5%;
-}
-.logo:hover {
-  color: #1a857f;
 }
 
-.navbar-btns bottom {
 .navbar-btns bottom {
   font-size: 20px;
   color: #feffff;
@@ -55,7 +48,6 @@ body {
   font-weight: 500;
   margin-left: 20PX;
 }
-.navbar-btns bottom:hover {
 .navbar-btns bottom:hover {
   color: #1a857f;
   text-decoration: underline;
@@ -86,41 +78,7 @@ body {
     align-items: center;
     margin-left: 0;
   }
-/* Mobile */
-@media only screen and (max-width: 600px) {
-  .header {
-    width: 100%;
-  }
-  .header,
-  .navbar-btns {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-  }
 }
-/* Tablet */
-@media only screen and (max-width: 900px) and (min-width: 601px) {
-  .header,
-  .navbar-btns {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: 0;
-  }
-}
-/* HOME */
-.section__container {
-  width: 100%;
-  margin-left: 60px;
-  padding: 5rem;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 4rem;
-  margin-top: 0;
 /* HOME */
 .section__container {
   width: 100%;
@@ -132,7 +90,6 @@ body {
   margin-top: 0;
 }
 
-.content {
 .content {
   display: flex;
   flex-direction: column;
@@ -147,19 +104,6 @@ body {
   margin-bottom: 0.5rem;
 }
 
-.subtitle {
-  letter-spacing: 2px;
-  color: #def2f1;
-  font-weight: 600;
-  margin-bottom: 0.5rem;
-}
-
-.title {
-  font-size: 2.5rem;
-  font-weight: 400;
-  line-height: 3rem;
-  color: #def2f1;
-  margin-bottom: 1rem;
 .title {
   font-size: 2.5rem;
   font-weight: 400;
@@ -177,24 +121,13 @@ body {
   color: #def2f1;
   margin-bottom: 2rem;
   font-size: 1.2rem;
-.description {
-  line-height: 1.5rem;
-  color: #def2f1;
-  margin-bottom: 2rem;
-  font-size: 1.2rem;
 }
 
-.action__btns {
 .action__btns {
   display: flex;
   gap: 1rem;
-  gap: 1rem;
 }
 
-.action__btns button {
-  font-size: 14px;
-  font-weight: 600;
-  letter-spacing: 1px;
 .action__btns button {
   font-size: 14px;
   font-weight: 600;
@@ -212,11 +145,7 @@ body {
 }
 .action__btns button:hover {
   transform: translateY(-3px);
-}
-.action__btns button:hover {
-  transform: translateY(-3px);
   color: #def2f1;
-  background: #17252a;
   background: #17252a;
 }
 
@@ -413,6 +342,40 @@ body {
 }
 
 /* MOBILE */
+@media only screen and (max-width: 600px) {
+  .titlehead {
+    text-align: center;
+    margin: 20px;
+  }
+  .edu-timeline {
+    margin: 50px auto;
+  }
+  .edu-timeline::after {
+    left: 31px;
+  }
+  .edu-container {
+    width: 100%;
+    padding-left: 80px;
+    padding-right: 25px;
+  }
+  .text-box {
+    font-size: 13px;
+  }
+  .tex-box small {
+    margin-bottom: 10px;
+  }
+  .rigth-container {
+    left: 0;
+  }
+  .left-container img, .rigth-container img {
+    left: 10px;
+  }
+  .left-container-arrow, .rigth-container-arrow {
+    border-right: 15px solid #def2f1;
+    border-left: 0;
+    left: -15px;
+  }
+}
 /* MOBILE */
 @media only screen and (max-width: 600px) {
   .titlehead {
@@ -658,11 +621,11 @@ body {
     margin: 50px auto;
   }
   .exp-timeline::after {
-    left: 160px;
+    left: 31px;
   }
   .exp-container {
-    width: 85%;
-    padding-left: 220px;
+    width: 100%;
+    padding-left: 80px;
     padding-right: 25px;
   }
   .experiance-text-box {
@@ -675,41 +638,7 @@ body {
     left: 0;
   }
   .exp-left-container img, .exp-rigth-container img {
-    left: 140px;
-  }
-  .exp-left-container-arrow, .exp-rigth-container-arrow {
-    border-right: 15px solid #def2f1;
-    border-left: 0;
-    left: -15px;
-  }
-}
-@media only screen and (min-width: 601px) and (max-width: 900px) {
-  .titlehead {
-    text-align: center;
-    margin: 20px;
-  }
-  .exp-timeline {
-    margin: 50px auto;
-  }
-  .exp-timeline::after {
-    left: 160px;
-  }
-  .exp-container {
-    width: 85%;
-    padding-left: 220px;
-    padding-right: 25px;
-  }
-  .experiance-text-box {
-    font-size: 13px;
-  }
-  .experiance-text-box small {
-    margin-bottom: 10px;
-  }
-  .exp-rigth-container {
-    left: 0;
-  }
-  .exp-left-container img, .exp-rigth-container img {
-    left: 140px;
+    left: 10px;
   }
   .exp-left-container-arrow, .exp-rigth-container-arrow {
     border-right: 15px solid #def2f1;
